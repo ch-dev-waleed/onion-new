@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "onion-new",
-    "slug": "onion-new",
+    "slug": "onion-x-new",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -48,8 +48,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "f78b3084-5db3-41bd-8f6e-5d76e99a2f81"
+        "projectId": "661f528e-026f-4d82-9be5-cb155d20dbf1"
       }
-    }
+    },
+    "owner": "hexa_waleed"
   }
 }
