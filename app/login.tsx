@@ -1,5 +1,4 @@
 import { Link } from "expo-router";
-import React from "react";
 import {
   Image,
   StyleSheet,
@@ -19,7 +18,7 @@ export default function login() {
       <View style={styles.ImageContainer}>
         <Image
           style={styles.ImageSize}
-          source={require("../assets/images/logo-signin.png")}
+          source={require("../assets/images/logo-login.png")}
         />
       </View>
       {/* Sign In Content */}

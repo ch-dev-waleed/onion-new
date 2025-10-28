@@ -18,7 +18,7 @@ const registration = () => {
           <View style={styles.ImageContainer}>
             <Image
               style={styles.ImageSize}
-              source={require("../assets/images/logo-signin.png")}
+              source={require("../assets/images/logo-login.png")}
             />
           </View>
           <View style={styles.SignInContent}>
