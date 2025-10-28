@@ -1,18 +1,15 @@
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useNavigation } from "@react-navigation/native";
+import React, { useEffect, useState } from "react";
 import {
-  ActivityIndicator,
-  FlatList,
+  Image,
   ScrollView,
   StyleSheet,
+  Switch,
   Text,
   TouchableOpacity,
   View,
 } from "react-native";
-import React, { useCallback, useEffect, useState } from "react";
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import { useNavigation } from "@react-navigation/native";
-import { Image } from "react-native";
-import { Switch } from "react-native";
-import { Link } from "expo-router";
 
 const ProfileScreen = () => {
   const navigation = useNavigation();
@@ -101,7 +98,10 @@ const ProfileScreen = () => {
             <View style={styles.innerSubscriptionCardTextContainer}>
               <Text style={styles.areaTextTitle}>SUBSCRIPTION</Text>
               <View style={styles.areaTextContainer}>
-                <TouchableOpacity onPress={()=>navigation.navigate("myplan")} style={styles.areaRow}>
+                <TouchableOpacity
+                  onPress={() => navigation.navigate("myplan")}
+                  style={styles.areaRow}
+                >
                   <View style={styles.rowTitle}>
                     <Text style={styles.rowTitle}>My Plan</Text>
                   </View>
@@ -113,19 +113,21 @@ const ProfileScreen = () => {
                     <Text style={styles.identificationText}>VIP MEMBER</Text>
                   </View>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={()=>navigation.navigate("subscription")} style={styles.areaRow}>
+                <TouchableOpacity
+                  onPress={() => navigation.navigate("subscription")}
+                  style={styles.areaRow}
+                >
                   {/* <Text style={styles.rowTitle}>My Plan</Text> */}
-                 
-                    <View style={styles.rowIdentificationNewRow}>
-                      <Image
-                        style={styles.rowIdentificationImageNewRowyellow}
-                        source={require("../../assets/images/iconsapp/subscription.png")}
-                      />
-                      <Text style={styles.identificationTextYellow}>
-                        View Plans
-                      </Text>
-                    </View>
-                 
+
+                  <View style={styles.rowIdentificationNewRow}>
+                    <Image
+                      style={styles.rowIdentificationImageNewRowyellow}
+                      source={require("../../assets/images/iconsapp/subscription.png")}
+                    />
+                    <Text style={styles.identificationTextYellow}>
+                      View Plans
+                    </Text>
+                  </View>
                 </TouchableOpacity>
                 <View style={styles.areaRow}>
                   {/* <Text style={styles.rowTitle}>My Plan</Text> */}
@@ -394,6 +396,7 @@ const styles = StyleSheet.create({
     width: "100%",
     display: "flex",
     flexDirection: "column",
+    gap: 4,
   },
   profileCrown: {
     width: 20,

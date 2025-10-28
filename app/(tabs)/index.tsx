@@ -125,7 +125,7 @@ export default function HomeScreen() {
           </Link>
         </View>
         <View style={styles.topCardRow}>
-          <Link href="/login" style={{width:Dimensions.get("screen").width*0.3, height:96}}>
+          <Link href="/subscription" style={{width:Dimensions.get("screen").width*0.3, height:96}}>
           <View style={styles.topCard}>   
             <View>
               <Text style={styles.cardTitleSubscription}>Subscription</Text>
